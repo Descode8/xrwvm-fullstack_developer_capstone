@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Best Cars</title>
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111827;
+        }
+
+        .top-nav {
+            background-color: #08c7c7;
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            gap: 40px;
+        }
+
+        .brand {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: #111827;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a.active {
+            font-weight: 700;
+        }
+
+        .page-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            align-items: center;
+            margin-top: 28px;
+        }
+
+        .contact-card {
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background: #ffffff;
+        }
+
+        .contact-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+        }
+
+        @media (max-width: 800px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .top-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="top-nav">
+    <a class="brand" href="/">Dealerships</a>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About Us</a>
+        <a class="active" href="/contact/">Contact Us</a>
+    </div>
+</nav>
+
+<div class="page-container">
+    <h1>Contact Us</h1>
+
+    <p>
+        Thank you for your interest in Best Cars. Our team is ready to help you find the right vehicle,
+        learn more about our dealerships, and answer questions about customer reviews.
+    </p>
+
+    <div class="contact-layout">
+        <div class="contact-card">
+            <h2>Best Cars Customer Support</h2>
+
+            <p><strong>Email:</strong> support@bestcars.com</p>
+            <p><strong>Phone:</strong> +1 (800) 555-0199</p>
+            <p><strong>Address:</strong> 123 Best Cars Avenue, Tampa, FL 33602</p>
+
+            <h2>Business Hours</h2>
+
+            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+            <p>Saturday: 10:00 AM - 4:00 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <img
+            class="contact-img"
+            src="/static/cars.jpeg"
+            alt="Best Cars vehicles"
+        >
+    </div>
+</div>
+
+</body>
+</html>

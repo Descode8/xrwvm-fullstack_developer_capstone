@@ -1,68 +1,176 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <title>About Us - Best Cars</title>
+
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #111827;
+        }
+
+        .top-nav {
+            background-color: #08c7c7;
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            gap: 40px;
+        }
+
+        .brand {
+            font-size: 28px;
+            font-weight: 700;
+            color: #111827;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: #111827;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a.active {
+            font-weight: 700;
+        }
+
+        .page-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 36px;
+            align-items: center;
+            margin-top: 24px;
+            margin-bottom: 48px;
+        }
+
+        .hero-img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.14);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            margin-top: 24px;
+        }
+
+        .team-card {
+            border: 1px solid #d1d5db;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .team-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 800px) {
+            .hero-section,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .top-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+        }
+    </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+<nav class="top-nav">
+    <a class="brand" href="/">Dealerships</a>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a class="active" href="/about/">About Us</a>
+        <a href="/contact/">Contact Us</a>
+    </div>
+</nav>
+
+<div class="page-container">
+    <h1>About Us</h1>
+
+    <div class="hero-section">
+        <div>
+            <p>
+                Welcome to Best Cars dealership, home to some of the best domestic and imported cars in North America.
+                We help customers find reliable vehicles at reasonable prices while making the buying experience simple,
+                transparent, and trustworthy.
+            </p>
+
+            <h2>Our Mission</h2>
+
+            <p>
+                Our mission is to connect customers with trusted dealerships and provide helpful information about vehicles,
+                customer reviews, and dealership locations. We believe buying a car should be clear, convenient, and backed
+                by excellent service.
+            </p>
         </div>
-      </div>
+
+        <img
+            class="hero-img"
+            src="/static/car_dealership.jpg"
+            alt="Best Cars dealership showroom"
+        >
     </div>
+
+    <h2>Meet Our Team</h2>
+
+    <div class="team-grid">
+        <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter">
+            <h3>James Carter</h3>
+            <p><strong>General Manager</strong></p>
+            <p>James leads dealership operations and makes sure customers receive honest, professional service.</p>
+            <p>james.carter@bestcars.com</p>
+        </div>
+
+        <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Rodriguez">
+            <h3>Maria Rodriguez</h3>
+            <p><strong>Customer Relations Lead</strong></p>
+            <p>Maria helps customers with questions, reviews, and dealership support throughout the buying process.</p>
+            <p>maria.rodriguez@bestcars.com</p>
+        </div>
+
+        <div class="team-card">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Thompson">
+            <h3>David Thompson</h3>
+            <p><strong>Technology Director</strong></p>
+            <p>David manages the Best Cars web platform, dealership data, and customer review services.</p>
+            <p>david.thompson@bestcars.com</p>
+        </div>
     </div>
-    </div>
-    
 </div>
 
+</body>
 </html>
