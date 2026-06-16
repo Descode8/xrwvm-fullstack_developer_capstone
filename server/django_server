@@ -1,0 +1,12 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+Django version 5.2.15, using settings 'djangoproj.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+
+[16/Jun/2026 19:52:53] "GET / HTTP/1.1" 200 2679
+[16/Jun/2026 19:52:54] "GET /static/bootstrap.min.css HTTP/1.1" 304 0
+[16/Jun/2026 19:52:54] "GET /static/style.css HTTP/1.1" 304 0
+[16/Jun/2026 19:52:54] "GET /static/car_dealership.jpg HTTP/1.1" 304 0
