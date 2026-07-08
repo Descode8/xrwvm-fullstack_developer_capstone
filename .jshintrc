@@ -1,0 +1,8 @@
+{
+  "esversion": 8,
+  "node": true,
+  "asi": true,
+  "undef": false,
+  "unused": false,
+  "sub": true
+}
